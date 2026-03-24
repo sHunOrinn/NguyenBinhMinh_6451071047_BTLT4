@@ -46,7 +46,7 @@ class _RegisterViewState extends State<RegisterView> {
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
-            Navigator.pop(context);
+            print('Back button pressed');
           },
         ),
       ),
@@ -73,6 +73,7 @@ class _RegisterViewState extends State<RegisterView> {
                   controller: _ageController,
                   keyboardType: TextInputType.number,
                   validator: FormValidators.validateAge,
+                  // suffixIcon: Icon(Icons.person),
                 ),
                 const SizedBox(height: 12),
                 DropdownSex(

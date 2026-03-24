@@ -8,7 +8,7 @@ class FormValidators {
 
 
   static String? validateAge(String? value) {
-    final requiredError = validateRequired(value, 'tuổi');
+    final requiredError = validateRequired(value, 'tuoi');
     if (requiredError != null) {
       return requiredError;
     }
@@ -30,6 +30,17 @@ class FormValidators {
       return 'Mức thu nhập phải lớn hơn 0';
     }
     return null;
+  }
+
+  static String? validateAtLeastOneInterest(Set<String>? interests) {
+    if (interests == null || interests.isEmpty) {
+      return 'Bạn phải chọn ít nhất 1 sở thích';
+    }
+    return null;
+  }
+
+  static String? validateSatisfaction(String? value) {
+    return validateRequired(value, 'mức độ hài lòng');
   }
 }
 
