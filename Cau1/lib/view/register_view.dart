@@ -88,7 +88,7 @@ class _RegisterViewState extends State<RegisterView> {
                             child: Icon(Icons.account_circle, size: 34),
                           ),
                           SizedBox(height: 8),
-                          Text('Account Circle'),
+                          Text('Nguyễn Bình Minh - 6451071047'),
                         ],
                       ),
                     ),

@@ -61,7 +61,7 @@ class _RegisterViewState extends State<RegisterView> {
               children: [
                 CustomTextField(
                   label: 'Họ và Tên',
-                  hint: 'Nhâp họ và tên',
+                  hint: 'Nguyễn Bình Minh - 6451071047',
                   controller: _fullNameController,
                   validator: (value) =>
                       FormValidators.validateRequired(value, 'họ và tên'),

@@ -66,7 +66,7 @@ class _SurveyViewState extends State<SurveyView> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  'SỞ THÍCH (INTERESTS)',
+                  'SỞ THÍCH (INTERESTS) - Nguyễn Bình Minh - 6451071047',
                   style: Theme.of(context).textTheme.titleSmall,
                 ),
                 const SizedBox(height: 8),
@@ -147,7 +147,14 @@ class _SurveyViewState extends State<SurveyView> {
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: _submitSurvey,
-                  child: const Text('Gửi khảo sát'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.lightBlueAccent,
+                    padding: const EdgeInsets.symmetric(vertical: 12),
+                  ),
+                  child: const Text(
+                    'Gửi khảo sát',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ],
             ),
